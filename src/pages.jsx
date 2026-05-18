@@ -130,7 +130,7 @@ function Hero({ variant, lang, settings, tweaks }) {
   const t = window.PV.T[lang];
   const showStripes = tweaks.showStripes !== false;
   const showPhotos = tweaks.showPhotos !== false;
-  const heroPhoto = tweaks.heroPhoto || "hero_neon_pepe.png";
+  const heroPhoto = tweaks.heroPhoto || "hero_neon_real.jpg";
   const headline = lang === "pt"
     ? (tweaks.heroHeadlinePT || t.hero_title)
     : (tweaks.heroHeadlineEN || t.hero_title);
