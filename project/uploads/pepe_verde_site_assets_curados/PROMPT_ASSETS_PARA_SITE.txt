@@ -1,0 +1,14 @@
+Usa os assets fornecidos neste pack como base visual do site.
+Organiza as imagens por função:
+- Interior/espaço: hero secundário, secção “O Espaço”, galeria, contactos.
+- Comida: hero, menu, destaques, Uber Eats, cards de categorias.
+- Equipa/staff: secção “Feito por nós” apenas se a imagem tiver qualidade suficiente.
+- Ambiente/lifestyle: secção de partilha, reservas, galeria.
+
+Regras:
+- Prioriza fotos reais da Pepe Verde.
+- Não uses imagens desfocadas, repetidas, com overlays/cartoons ou crops estranhos como hero.
+- Em mobile, usa crops verticais e garante que comida/pessoas não ficam cortadas de forma errada.
+- Mantém o tratamento quente e natural; não usar filtros exagerados.
+- O menu digital deve seguir as imagens reais do menu enviado: riscas verde claro/branco, títulos vermelhos, nomes dos pratos em verde bold, preços junto ao nome e avisos alimentares no rodapé.
+- Onde houver clientes ou staff visíveis, assume que há autorização, mas mantém o uso discreto e profissional.

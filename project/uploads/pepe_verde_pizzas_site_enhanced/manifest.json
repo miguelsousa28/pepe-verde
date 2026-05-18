@@ -1,0 +1,52 @@
+[
+  {
+    "order": 1,
+    "file": "01_pizza_4_formaggi.png",
+    "pizza": "Pizza 4 Formaggi"
+  },
+  {
+    "order": 2,
+    "file": "02_pizza_amalfi.png",
+    "pizza": "Pizza Amalfi"
+  },
+  {
+    "order": 3,
+    "file": "03_pizza_capricciosa.png",
+    "pizza": "Pizza Capricciosa"
+  },
+  {
+    "order": 4,
+    "file": "04_pizza_fano.png",
+    "pizza": "Pizza Fano"
+  },
+  {
+    "order": 5,
+    "file": "05_pizza_ferrara.png",
+    "pizza": "Pizza Ferrara"
+  },
+  {
+    "order": 6,
+    "file": "06_pizza_imola.png",
+    "pizza": "Pizza Imola"
+  },
+  {
+    "order": 7,
+    "file": "07_pizza_margherita.png",
+    "pizza": "Pizza Margherita"
+  },
+  {
+    "order": 8,
+    "file": "08_pizza_margherita_e_bufala.png",
+    "pizza": "Pizza Margherita e Bufala"
+  },
+  {
+    "order": 9,
+    "file": "09_pizza_palermo.png",
+    "pizza": "Pizza Palermo"
+  },
+  {
+    "order": 10,
+    "file": "10_pizza_parma.png",
+    "pizza": "Pizza Parma"
+  }
+]

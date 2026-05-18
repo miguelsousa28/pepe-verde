@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+
+<title>Pepe Verde | Pizzaria Italiana na Ericeira</title>
+<meta name="description" content="Pizza italiana, antipasti, saladas, piadine e reservas no coração da Ericeira. Descobre a Pepe Verde — A Slice of Italy." />
+<meta name="theme-color" content="#1F5A3F" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant.restaurant" />
+<meta property="og:title" content="Pepe Verde | Pizzaria Italiana na Ericeira" />
+<meta property="og:description" content="A Slice of Italy. Pizzas, antipasti, saladas e piadine na Ericeira." />
+<meta property="og:image" content="assets/logo.jpg" />
+<meta property="og:locale" content="pt_PT" />
+<meta property="og:locale:alternate" content="en_GB" />
+<meta property="og:site_name" content="Pepe Verde" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Pepe Verde | Pizzaria Italiana na Ericeira" />
+<meta name="twitter:description" content="A Slice of Italy. Pizzas, antipasti, saladas e piadine na Ericeira." />
+<meta name="twitter:image" content="assets/logo.jpg" />
+
+<link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+
+<!-- Schema.org Restaurant + LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Pepe Verde",
+  "image": "assets/logo.jpg",
+  "description": "Pizzaria italiana na Ericeira. Pizzas, antipasti, saladas e piadine.",
+  "servesCuisine": ["Italian", "Pizza"],
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Mendes Leal nº 22",
+    "addressLocality": "Ericeira",
+    "postalCode": "2655-319",
+    "addressCountry": "PT"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 38.9628, "longitude": -9.4179 },
+  "telephone": "+351 932 129 506",
+  "url": "https://pepeverde.pt",
+  "sameAs": ["https://instagram.com/pepeverdeericeira"],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "18:00", "closes": "22:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "18:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "12:30", "closes": "15:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "18:00", "closes": "23:00" }
+  ],
+  "menu": "/#/menu",
+  "acceptsReservations": "True"
+}
+</script>
+
+<!-- Fonts: Bowlby One (blocky display, similar to PEPE VERDE lettering),
+     Inter (UI), JetBrains Mono (placeholder labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #F7F4E8; color: #1F5A3F; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body { font-family: 'Inter', system-ui, sans-serif; }
+  a { color: inherit; }
+  button { font-family: inherit; }
+  input, select, textarea { font-family: inherit; }
+
+  /* Better focus rings */
+  button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid #C8463F;
+    outline-offset: 2px;
+  }
+
+  /* Hover on green buttons */
+  .pv-btn { transition: all 0.15s ease; }
+  .pv-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+  .pv-btn:active { transform: translateY(0); }
+
+  /* Toast animation */
+  @keyframes pvSlide {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  /* Modal animations */
+  @keyframes pvFade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes pvScale {
+    from { opacity: 0; transform: translateY(12px) scale(0.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  /* Date strip scroll */
+  .pv-date-strip::-webkit-scrollbar { height: 6px; }
+  .pv-date-strip::-webkit-scrollbar-thumb { background: rgba(31,90,63,0.3); }
+
+  /* Tabs scroll on mobile */
+  .pv-cat-tabs::-webkit-scrollbar { height: 0; }
+  .pv-cat-tabs { scrollbar-width: none; }
+
+  /* ----- Responsive ----- */
+  @media (max-width: 880px) {
+    .pv-nav-desk { display: none !important; }
+    .pv-menu-toggle { display: block !important; }
+    .pv-uber-desk, .pv-reserve-desk { display: none !important; }
+    .pv-hero-split-grid { grid-template-columns: 1fr !important; }
+    .pv-loc-grid { grid-template-columns: 1fr !important; }
+    .pv-form-2col, .pv-form-3col { grid-template-columns: 1fr !important; }
+    .pv-modal-2col { grid-template-columns: 1fr !important; }
+    .pv-sobre-grid { grid-template-columns: 1fr !important; }
+    .pv-admin-sidebar { width: 100% !important; padding: 16px 0 !important; }
+    .pv-admin-shell { flex-direction: column !important; }
+    .pv-admin-main { padding: 24px 20px !important; }
+  }
+  @media (min-width: 881px) {
+    .pv-menu-toggle, .pv-nav-mobile-panel { display: none !important; }
+  }
+
+  /* Menu stickers — only visible when there's room in the side gutters */
+  @media (max-width: 1180px) {
+    .pv-menu-sticker { display: none !important; }
+  }
+
+  /* Print: hide chrome */
+  @media print {
+    header, footer, .pv-tweaks { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<!-- Fallback for browsers without JS -->
+<noscript>
+  <main style="max-width:720px;margin:60px auto;padding:24px;font-family:Inter,sans-serif;color:#1F5A3F;text-align:center">
+    <img src="assets/logo.jpg" width="120" alt="Pepe Verde" />
+    <h1 style="font-size:32px">Pepe Verde — Pizzaria Italiana, Ericeira</h1>
+    <p>R. Mendes Leal nº 22, 2655-319 Ericeira</p>
+    <p>+351 932 129 506 — @pepeverdeericeira</p>
+    <p>Para reservas, ativa o JavaScript ou liga-nos directamente.</p>
+  </main>
+</noscript>
+
+<!-- React + Babel (pinned + SRI) -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<!-- App modules (order matters) -->
+<script type="text/babel" src="src/data.jsx"></script>
+<script type="text/babel" src="src/components.jsx"></script>
+<script type="text/babel" src="src/reservation.jsx"></script>
+<script type="text/babel" src="src/pages.jsx"></script>
+<script type="text/babel" src="src/admin.jsx"></script>
+<script type="text/babel" src="src/app.jsx"></script>
+</body>
+</html>
